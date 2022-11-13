@@ -6,7 +6,6 @@ app.use(express.json())
 require('./DB')
 const Temp = require('./models/Temp')
 const PORT = process.env.PORT || 8000
-
 app.post('/harshit', async (req, res) => {
     try {
         const Data = new Temp(req.body)
