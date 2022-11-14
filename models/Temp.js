@@ -5,13 +5,17 @@ const TempSchema = new mongoose.Schema({
         type: String,
         default: "HVERMA"
     },
-    Temp: {
-        type: String,
-        required: [true, 'Digit is required']
+    ADC: {
+        type: Number,
+        required: [true, 'ADC is required']
+    },
+    KEY: {
+        type: Number,
+        default: 0
     },
     Time: {
         type: String,
-        default:new Date()
+        default: new Date()
     }
 
 })
