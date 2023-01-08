@@ -1,17 +1,13 @@
 const mongoose = require("mongoose")
 
 const TempSchema = new mongoose.Schema({
-    MID: {
+    api_key: {
         type: String,
-        default: "HVERMA"
+        default: ""
     },
-    ADC: {
-        type: Number,
-        required: [true, 'ADC is required']
-    },
-    KEY: {
-        type: Number,
-        default: 0
+    field1: {
+        type: String,
+        default: ""
     },
     Time: {
         type: String,
